@@ -1,0 +1,120 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Icy gradient background and page font */
+  body {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #e6f4fb, #ffffff);
+    color: #1f3b57;
+  }
+  
+  /* White card that holds the pet, stats, and buttons */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(74, 144, 194, 0.25);
+  }
+  
+  header {
+    text-align: center;
+    border-bottom: 3px solid #4a90c2;
+  }
+  
+  h1 {
+    color: #4a90c2;
+    letter-spacing: 1px;
+  }
+  
+  p {
+    max-width: 600px;
+  }
+  
+  /* Pet image, stats, and button layout */
+  .pet-image {
+    height:250px;
+  }
+  
+  .pet-image-container {
+    text-align: center;
+    padding:10px;
+  }
+  
+  .dashboard {
+    text-align: center;
+    padding: 0 20px 20px;
+  }
+  
+  .button-container {
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Rounded icy blue buttons */
+  .button-container button {
+    width: 100px;
+    padding: 10px 0;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4a90c2;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+
+  /* Darker blue when the mouse is over a button */
+  .button-container button:hover {
+    background-color: #2f6f9f;
+  }
+
+  /* Shrinks slightly while being clicked so it feels pressed */
+  .button-container button:active {
+    transform: scale(0.95);
+  }
+
+  /* Speech bubble for the pet's comments */
+  .pet-comment {
+    width: fit-content;
+    margin: 0 auto 15px;
+    padding: 10px 18px;
+    background-color: #e6f4fb;
+    border: 2px solid #4a90c2;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+
+  /* Start Over button: outlined so it looks different from the care buttons */
+.reset-button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a90c2;
+  background-color: #ffffff;
+  border: 2px solid #4a90c2;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Light blue fill on hover */
+.reset-button:hover {
+  background-color: #e6f4fb;
+}
